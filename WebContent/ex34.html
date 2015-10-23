@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="./jquery/jquery-1.9.0.js"></script>
+<script type="text/javascript">
+	$(function() {
+		/* 코드를 완성하세요 */
+		//함수 체인
+		//$("a").attr("href", "http://www.bitacademy.com").attr("target",
+		//	"_blank");
+		$("a").attr({
+			"href" : "http://www.bitacademy.com",
+			"target" : "_blank"
+		});
+		$("h1").css({
+			"font-size" : "1.2em",
+			"font-family" : "맑은 고딕"
+		});
+		$("a").css({
+			"color" : "333",
+			"text-decoration" : "none"
+		});
+		console.log($("a").attr("title"));
+	});
+</script>
+</head>
+<body>
+
+	<h1>
+		<a title="비트 홈페이지 가기" data-no="1">비트 홈페이지 가기</a>
+	</h1>
+
+</body>
+</html>
